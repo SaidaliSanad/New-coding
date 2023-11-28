@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidali Sanadi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1><b>My Portfolio</b></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#country">Country</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <h2>Home</h2>
+        <h3>Welcome to My Portfolio</h3>
+        <p>This is the landing page of my Portfolio. I will showcase my skills, projects, and experiences here</p>
+        <h2>About Me</h2>
+        <p>I am a passionate individual with a strong background in to many things. This section will feature a detailed bio soon!...</p>
+        <div class="project" data-category="web">
+            <h2>Web Projects</h2>
+            <p>Here will be a collection of my projects showcasing my skills and experiences.</p>
+        </div>
+        <div class="Contact" data-category="mobile">
+            <h2>Contact</h2>
+            <p>Feel free to reach out! A contact form will be added soon for inquiries and feedback</p>
+        </div>
+        <div class="Blog" data-category="mobile">
+            <h2>Blog</h2>
+            <p>Coming soon! This section will have blog posts related to my interests and experiences.</p>
+        </div>
+        
+
+        <label for="categoryDropdown"><h><b>Filter by Category:</b></h></label>
+        <select id="categoryDropdown">
+            <option value="All">All</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Mobile App">Mobile App</option>
+            <option value="Business Web">Business Web</option>>
+        </select>
+        <button id="filterButton">Filter</button>
+        <div id="projectsContainer"></div>
+
+        <canvas id="skillChart" width="400" height="200"></canvas>
+    </section>
+    
+    <section>
+     <h><b> Name :</b></h>
+     <input type="name"name="name"
+     Size="20" maxlengh="30"/>
+    </section> 
+    <section>
+    <h><b>Contact:</b></h>
+    <input type="Contact"name="Contact"
+     Size="19" maxlengh="30"/>
+    </section>
+    <section>
+     <h><b>Email :</b></h>
+    <input type="Email"name="Email"
+     Size="20" maxlengh="30"/>
+    </section>
+
+    <section>
+        <label for="message"><b>SMS :</b></label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit"><b>Submit</b></button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
